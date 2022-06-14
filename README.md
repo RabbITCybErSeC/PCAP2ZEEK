@@ -5,6 +5,15 @@
  |  __/| |___ / ___ \|  __// __/ / /_| |___| |___| . \
  |_|    \____/_/   \_\_|  |_____/____|_____|_____|_|\_\
 ```
-Description:
+
+### 
+### Description:
 
 Tool provides easy functionality for converting Raw packet packet captures to Zeek logs format.
+
+
+
+
+### Requirements:
+The tool requires the following dependencies:
+```Zeek```[Installation](https://docs.zeek.org/en/master/install.html)
