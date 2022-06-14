@@ -37,3 +37,7 @@ The tool requires the following dependencies:
 
 - ```Zeek```[Installation](https://docs.zeek.org/en/master/install.html)
 - ```>= Python 3.8```
+
+### Todo:
+- Add functionality for default network statistics based on predefined logs. 
+- Workout folder based conversion, and recursive folder conversion. 
