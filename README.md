@@ -43,11 +43,15 @@ The tool requires the following dependencies:
 - ```nfdump & nfpcapd```[nfdump & nfpcapd](https://github.com/phaag/nfdump)
 - ```>= Python 3.8```
 
+Note: Tool only has been tested on debian based system. 
+
 
 Note: (“nfpcapd: is the pcap capture daemon of the nfdump tools.
 It reads network packets from an interface or from a file and directly creates nfdump netflow records.”
 from https://github.com/phaag/nfdump/blob/master/man/nfpcapd.1
+
 ### Todo:
+- Installer 
 - Add functionality for default network statistics based on predefined logs. 
 - Workout folder based conversion, and recursive folder conversion. 
 - Basic log anomaly detection
