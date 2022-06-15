@@ -10,7 +10,7 @@
 ## PCAP2Zeek Tool
 
 ### Description:
-Tool to easily and quickly convert .pcap files to Netflow formator Zeek logs.
+Tool to easily and quickly convert .pcap files to Netflow format or Zeek logs.
 For Zeek, your settings and additional scripts can be added to the local.zeek file.
 ### Usage:
 ```
