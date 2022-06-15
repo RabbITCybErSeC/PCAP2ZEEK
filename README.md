@@ -10,21 +10,23 @@
 ## PCAP2Zeek Tool
 
 ### Description:
-
-Tool provides easy functionality for converting Raw packet-packet captures to Zeek logs format.
-
+Tool to easily and quickly convert .pcap files to Netflow formator Zeek logs.
+For Zeek, your settings and additional scripts can be added to the local.zeek file.
 ### Usage:
 ```
 python main.py -h
 
-optional arguments:
+options:
   -h, --help            show this help message and exit
-  -p Path to Pcap, --path Path to Pcap
+  -n, --netflow         Flag for exporting as netflow format
+  -z, --zeek            Flag for exporting as Zeek format
+  -p <path>, --path <path>
                         Single pcap file
-  -f read folder path, --folder read folder path
+  -f <path>, --folder <path>
                         Folder path to Pcaps
-  -w write folder path, --write_folder write folder path
+  -w <path>, --write_folder <path>
                         Folder path to store, only works with single Pcap
+
 ```
 Note that the program requires a `local.zeek` file in the same folder the `main.py` file. 
 Conversion to Netflow format is based on the method proposed by [markelic](https://markelic.de/how-to-get-netflow-from-a-pcap-file/).
