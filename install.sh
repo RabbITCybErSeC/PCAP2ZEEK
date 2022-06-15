@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "[ERROR] Installer not test & done yet"
+echo "[ERROR] Installer not tested & done yet"
 
 
 exit 0
