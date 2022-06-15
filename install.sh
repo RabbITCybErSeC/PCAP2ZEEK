@@ -2,7 +2,7 @@
 echo "[ERROR] Installer not test & done yet"
 
 
-exit(0)
+exit 0
 
 sudo apt-get install flex
 sudo apt-get install libpcap-dev
