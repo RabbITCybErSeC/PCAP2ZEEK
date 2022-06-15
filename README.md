@@ -29,7 +29,8 @@ options:
 
 ```
 Note that the program requires a `local.zeek` file in the same folder the `main.py` file. 
-Conversion to Netflow format is based on the method proposed by [markelic](https://markelic.de/how-to-get-netflow-from-a-pcap-file/).
+Conversion to Netflow format is based on the method proposed by [markelic](https://markelic.de/how-to-get-netflow-from-a-pcap-file/) 
+& [jjsantanna](https://gist.github.com/jjsantanna/f2ee2f1fe23208299f4a2ca392f8b23f?permalink_comment_id=3540601)
 
 Example:
 ```
@@ -53,7 +54,7 @@ It reads network packets from an interface or from a file and directly creates n
 from https://github.com/phaag/nfdump/blob/master/man/nfpcapd.1
 
 ### Todo:
-- Installer 
+- Auto tool installer in under development
 - Add functionality for default network statistics based on predefined logs. 
 - Workout folder based conversion, and recursive folder conversion. 
 - Basic log anomaly detection
