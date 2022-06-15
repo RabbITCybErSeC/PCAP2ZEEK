@@ -41,3 +41,5 @@ The tool requires the following dependencies:
 ### Todo:
 - Add functionality for default network statistics based on predefined logs. 
 - Workout folder based conversion, and recursive folder conversion. 
+- Basic log anomaly detection
+- Standard data visualisations. 

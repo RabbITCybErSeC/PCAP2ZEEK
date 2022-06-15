@@ -18,16 +18,35 @@ def init():
     root.addHandler(handler)
 
 
+### For recursive to be impelmented
+def fast_scandir(dirname):
+    subfolders = [f.path for f in os.scandir(dirname) if f.is_dir()]
+    for dirname in list(subfolders):
+        subfolders.extend(fast_scandir(dirname))
+    return subfolders
+
+
+def folders(path):
+    directory_contents = [f for f in os.listdir(path) if f.endswith(r".pcap")]
+    logging.info(f"Found {len(directory_contents)} .pcaps in folder")
+    for item in directory_contents:
+        output_folder = f'{os.getcwd()}/{const.OUTPUT_FOLDER}/{item}_ZEEK'
+        item_path = f'{path}/{item}'
+        conv.check_output_folder(output_folder)
+        conv.pcap2zeeklogs(item_path, output_folder)
+
+
 def run(args):
     if args.path:
         if args.write_folder:
-            print(args.write_folder)
-            conv.pcap2zeeklogs(args.path, args.write_folder)
+            conv.pcap2zeeklogs(os.path.abspath(args.path)
+                               , os.path.abspath(args.write_folder))
         else:
-            conv.pcap2zeeklogs(args.path, os.getcwd())
-
+            write_path = f'{os.getcwd()}/{const.OUTPUT_FOLDER}'
+            conv.pcap2zeeklogs(os.path.abspath(args.path)
+                               , write_path)
     elif args.folder:
-        pass
+        folders(os.path.abspath(args.folder))
     else:
         parser.print_help()
 
@@ -48,7 +67,7 @@ if __name__ == '__main__':
                         help='Folder path to Pcaps')
 
     parser.add_argument('-w', '--write_folder', metavar='write folder path', type=str,
-                        help='Folder path to store ')
+                        help='Folder path to store, only works with single Pcap')
 
     # parser.add_argument('--log', default=sys.stdout, type=argparse.FileType('w'),
     #                     help='the file where the sum should be')
