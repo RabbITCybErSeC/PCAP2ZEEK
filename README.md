@@ -24,7 +24,7 @@ optional arguments:
   -f read folder path, --folder read folder path
                         Folder path to Pcaps
   -w write folder path, --write_folder write folder path
-                        Folder path to store
+                        Folder path to store, only works with single Pcap
 ```
 Note that the program requires a `local.zeek` file in the same folder the `main.py` file. 
 
