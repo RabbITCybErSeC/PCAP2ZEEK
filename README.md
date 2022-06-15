@@ -31,8 +31,11 @@ Conversion to Netflow format is based on the method proposed by [markelic](https
 
 Example:
 ```
- python main.py -p "/home/user/dataset/attacker.pcap" -w "/home/user/ouput_folder"
+ python main.py -z -p "/home/user/dataset/attacker.pcap" -w "/home/user/ouput_folder"
 ```
+
+### Alternative Tools:
+- Python NetFlow/IPFIX library [Github](https://github.com/bitkeks/python-netflow-v9-softflowd)
 ### Requirements:
 The tool requires the following dependencies:
 
