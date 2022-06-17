@@ -12,6 +12,16 @@
 ### Description:
 Tool to easily and quickly convert .pcap files to Netflow format or Zeek logs.
 For Zeek, your settings and additional scripts can be added to the local.zeek file.
+
+### Installer:
+
+```
+git clone https://github.com/thehoodbuddha/PCAP2ZEEK.git
+sudo apt-get update && upgrade -y
+cd PCAP2ZEEK
+sudo chmod +x install.sh
+./install.sh
+```
 ### Usage:
 ```
 python main.py -h
