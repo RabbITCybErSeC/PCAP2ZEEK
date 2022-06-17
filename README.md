@@ -46,6 +46,9 @@ Example:
 ```
  python main.py -z -p "/home/user/dataset/attacker.pcap" -w "/home/user/ouput_folder"
 ```
+```
+ python main.py -n -f "/home/user/dataset"
+```
 
 ### Alternative Tools:
 - Python NetFlow/IPFIX library [Github](https://github.com/bitkeks/python-netflow-v9-softflowd)
