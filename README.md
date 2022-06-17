@@ -14,7 +14,7 @@ Tool to easily and quickly convert .pcap files to Netflow format or Zeek logs.
 For Zeek, your settings and additional scripts can be added to the local.zeek file.
 
 ### Installer:
-
+Note that the installer is only made for Ubuntu. 
 ```
 git clone https://github.com/thehoodbuddha/PCAP2ZEEK.git
 sudo apt-get update && upgrade -y
