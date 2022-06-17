@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "[ERROR] Installer not tested & done yet"
 
+echo "[INFO] Installer might be buggy please report \n"
 
 sudo apt-get install cmake make gcc g++ flex bison libpcap-dev libssl-dev python3 python3-dev swig zlib1g-dev -y
 
@@ -17,15 +17,11 @@ sudo ldconfig
 echo "[INFO] Cleaning up"
 rm -r nfdump
 
-echo "[INFO] Trying to install ZEEK"
-
-
-sudo apt update
-sudo apt install zeek-lts
+echo "[INFO] Trying to install ZEEK \n"
 
 . /etc/os-release
 
-echo -n "Ubuntu version: $VERSION_ID"
+echo -n "[INFO] Detected Ubuntu version: $VERSION_ID \n"
 
 case $VERSION_ID in
 
